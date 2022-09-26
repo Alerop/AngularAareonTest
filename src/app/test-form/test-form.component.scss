@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    grid-gap: 1rem;
+
+    & div.input-element {
+        display: grid;
+        grid-template-columns: 8rem 1fr;
+    }
+
+    & div.select-element {
+        display: grid;
+        grid-template-columns: 8rem 11rem;
+    }
+
+    & div:has(button[type=submit]) {
+        display: grid;
+        justify-content: flex-end;
+    }
+}
+
+.input-error {
+    border-color: red;
+
+}
+
+.message-error {
+    grid-column: span 2;
+    color: red;
+}
